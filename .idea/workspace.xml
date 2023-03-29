@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b439860-6de7-4d2d-b645-f976e64c0b13" name="Changes" comment="Es:02">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Select/SQL-01-Installation and User Permissions" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Select/SQL-02-Table" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Select/SQL-03-Select" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Select/SQL-04-Alter" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/SQL-05-View" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/Start.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/Student.java" afterDir="false" />
+    <list default="true" id="7b439860-6de7-4d2d-b645-f976e64c0b13" name="Changes" comment="Es:SQL">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,12 +132,20 @@
       <option name="project" value="LOCAL" />
       <updated>1679996273767</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Es:SQL">
+      <created>1680090092208</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680090092208</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Es:02" />
-    <option name="LAST_COMMIT_MESSAGE" value="Es:02" />
+    <MESSAGE value="Es:SQL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Es:SQL" />
   </component>
 </project>

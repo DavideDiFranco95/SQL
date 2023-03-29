@@ -2,10 +2,9 @@ package main.java.view;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Start {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NullPointerException {
         Connection conn = null;
         try {
             String url = "jdbc:mysql://localhost:3306/newdb";
@@ -13,26 +12,34 @@ public class Start {
             String password = "Irisviel95!";
             conn = DriverManager.getConnection(url,user,password);
             Statement statement;
-            ResultSet resultSet;
-            ResultSet resultSet1;
-            List<String> italianStudents = new ArrayList<>();
-            List<String> germanStudents = new ArrayList<>();
+            ResultSet italians;
+            ResultSet germans;
+            ArrayList<Student> italianStudents = new ArrayList<>();
+            ArrayList<Student> germanStudents = new ArrayList<>();
             try {
                 statement = conn.createStatement();
-                resultSet = statement.executeQuery("SELECT * FROM italian_students");
-                while (resultSet.next()){
-                    System.out.print(resultSet.getString("first_name") + " ");
-                    System.out.println(resultSet.getString(2));
-                    italianStudents.add(resultSet.getString("first_name"));
+                italians = statement.executeQuery("SELECT * FROM italian_students");
+                while (italians.next()){
+
+
+                    for (Student student:italianStudents) {
+                        student.surname = italians.getString("first_name");
+                        student.name = italians.getString(2);
+                        italianStudents.add(student);
+                    }
+
                     System.out.println(italianStudents);
 
                 }
-                resultSet1 = statement.executeQuery("SELECT * FROM german_students");
-                while (resultSet1.next()){
-                    System.out.print(resultSet1.getString("first_name") + " ");
-                    System.out.println(resultSet1.getString(2));
-                    germanStudents.add(resultSet1.getString("first_name"));
+                germans = statement.executeQuery("SELECT * FROM german_students");
+                while (germans.next()){
+                    for (Student student:germanStudents) {
+                        student.surname = germans.getString("first_name");
+                        student.name = germans.getString(2);
+                        germanStudents.add(student);
+                    }
                     System.out.println(germanStudents);
+
                 }
             }catch (SQLException e){
                 e.printStackTrace();
