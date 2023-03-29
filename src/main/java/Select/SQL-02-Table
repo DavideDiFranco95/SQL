@@ -1,0 +1,3 @@
+
+CREATE TABLE newdb.students (student_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, last_name VARCHAR(30), first_name VARCHAR(30));
+Ho popolato il DB tramite Workbench però xD

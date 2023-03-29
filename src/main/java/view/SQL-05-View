@@ -1,0 +1,6 @@
+CREATE VIEW newdb.italian_students AS SELECT first_name,last_name FROM newdb.students WHERE country = 'Italy';
+CREATE VIEW newdb.german_students AS
+                                 -> SELECT first_name,last_name
+                                 -> FROM newdb.students WHERE country = 'Germany';
+
+Si, ho provato due modi diversi per farle
